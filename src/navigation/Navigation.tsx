@@ -6,6 +6,7 @@ import {Porolio} from '../screen/porfolio/Porolio';
 import {Trade} from '../screen/trade/Trade';
 import {Marker} from '../screen/market/Marker';
 import {Profile} from '../screen/profile/Profile';
+import {Home} from '../screen/home/Home';
 const Stack = createNativeStackNavigator();
 const BottomTab = createBottomTabNavigator();
 export const Navigation = () => {
@@ -29,7 +30,7 @@ export function HomeTab() {
       screenOptions={{
         headerShown: false,
       }}>
-      <BottomTab.Screen name={NAME_NAVIGATION.HOME} component={Porolio} />
+      <BottomTab.Screen name={NAME_NAVIGATION.HOME} component={Home} />
       <BottomTab.Screen name={NAME_NAVIGATION.PORFOLIO} component={Porolio} />
       <BottomTab.Screen name={NAME_NAVIGATION.TRADE} component={Trade} />
       <BottomTab.Screen name={NAME_NAVIGATION.MARKET} component={Marker} />
